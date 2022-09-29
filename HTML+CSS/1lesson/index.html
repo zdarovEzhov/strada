@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Страница Ежова</title>
+</head>
+
+<body>
+  <h2>Полезное</h2>
+  <a href="https://www.youtube.com/watch?v=zrnwle-juHQ" id="hotkey">Горячие клавиши</a>
+  <br>
+  <br>
+
+  <h1>Блочные элементы:</h1>
+  <br>
+  <h1>Заголовок h1</h1>
+  <h2>Заголовок h2</h2>
+  <h3>Заголовок h3</h3>
+  <h4>Заголовок h4</h4>
+  <h5>Заголовок h5</h5>
+  <h6>Заголовок h6</h6>
+
+  <p>p - Абзац</p>
+
+  <ul>ul - список маркированный
+    <li>li - one</li>
+    <li>two</li>
+
+  </ul>
+
+  <ol> ol - циферный список
+    <li>li - one</li>
+    <li>two</li>
+  </ol>
+
+  <article> article - статьи какие-то</article>
+
+  <section> section - разделы какие-то</section>
+
+  <blockquote>blockquote - длинные цитаты какие-то</blockquote>
+
+  <div>div - блоки общего назначения</div>
+
+
+  <br><br>
+  <h1> Строчные элементы</h1>
+
+  <a href="ссылка">a href - ссылка</a>
+  <br>
+  <em> em - выделенные слова</em>
+  <br>
+  <strong>strong - важные слова</strong>
+  <br>
+  <q>q - короткие цитаты</q>
+  <br>
+  <abbr title="аббревиатуры">abbr- аббревиатуры</abbr>
+  <br>
+  <h1>Списки:</h1>
+  <dl>
+     <dt>dt - Гаспачо</dt>
+    <dd>dd - лёгкий холодный суп из перетёртых в пюре свежих овощей</dd>
+     <dt>dt - Том-ям</dt>
+    <dd>dd - кисло-острый суп на основе куриного бульона с креветками, курицей, рыбой или другими морепродуктами</dd>
+     <dt>dt - Борщ</dt>
+    <dd>dd - разновидность супа на основе свёклы, которая придаёт борщу характерный красный цвет</dd>
+  </dl>
+  <br>
+  <h3>Списки можно вкладывать друг в друга. Для этого в элемент списка вставляется ещё один список. Можно вкладывать
+    списки любого вида друг в друга в любой последовательности.</h3>
+  <ul>
+    <li> еда
+      <ul>
+        <li>pringls
+          <ul>
+            <li>cheese</li>
+            <li>original
+              <ul>
+                <li>small</li>
+                <li>big</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>snickers</li>
+        <li>mars</li>
+      </ul>
+    </li>
+    <li>drinks
+      <ul>
+        <li>coca</li>
+        <li>pepsi</li>
+        <li>sprite</li>
+      </ul>
+    </li>
+    <li>girls</li>
+    <li>boys</li>
+
+
+  </ul>
+  <br>
+  <h1>Картинки:</h1>
+  <ul>Команды
+    <li>src - ссылка на картинку</li>
+    <li> alt - текст, который отображается вместо картинки, если она не загрузилась</li>
+    <li> title - текст, который отображается при наведении мыши на картинку</li>
+    <li> width - ширина картинки в пикселях</li>
+    <li>height - высота картинки в пикселях</li>
+  </ul>
+
+  <br>
+  <img src="https://strada.one/img/landing/ellipse_main.svg" alt="logo strada" title="logo" width="300" height="300">
+  <br>
+  <br>
+  <br>
+  <img src="img/logo.png" alt="logo">
+  <br>
+  <br>
+  <br>
+  <a href="#hotkey">ссылка на якорь Посмотреть горячие клавиши</a>
+  <br>
+  <a href="https://google.com" target="_blank">
+    ссылка на гугл в новом окне
+  </a>
+
+  <br>
+  <br>
+  <br>
+  <h1>Таблицы</h1>
+  <br>
+  <table>
+    <tr>
+      <th>моя</th>
+      <th>первая</th>
+      <th>таблица</th>
+    </tr>
+    <tr>
+      <td>вторая</td>
+      <td>строка</td>
+      <td>таблицы</td>
+    </tr>
+    <tr>
+      <td>третья</td>
+      <td>строка</td>
+      <td>таблицы</td>
+    </tr>
+  </table>
+  <br>
+  <table border="1">
+    <tr>
+      <td>Hello</td>
+      <td>world</td>
+      <td>:DDDDDDDDD</td>
+    </tr>
+    <tr>
+      <td colspan="3">cosplan = 3; Hello Ezhov :D</td>
+    </tr>
+  </table>
+  <br>
+  <br>
+  <br>
+  <table border="1">
+    <tr>
+      <td rowspan="2">rowspan="2" - первая высокая</td>
+      <td>вторая</td>
+      <td>третья</td>
+    </tr>
+    <tr>
+      <td colspan="2">colspan="2" - широкая</td>
+    </tr>
+  </table>
+
+
+
+  <h2>Формы</h2>
+  <h3>GET</h3>
+  <p>Страница, созданная методом GET, может быть открыта повторно множество раз. Метод
+    GET следует использовать для получения данных от сервера и не желательно в запросах, предполагающих внесений
+    изменений в ресурс. Например, можно использовать метод GET в HTML форме фильтра товаров: когда нужно, исходя из
+    данных введенных пользователем, переправить его на страницу с отфильтрованными товарами, соответствующими его
+    выбору. </p>
+  <br>
+
+  <h2>POST</h2>
+  <p>
+    Методом POST так же можно отправлять данные в URL. Но, в отличие от GET, он может иметь тело - специальную
+    "коробочку", в которую можно положить данные, которые уйдут на сервер.
+    Этот метод обычно используется для отправки форм и загрузки файлов.
+    Запрос, выполненный методом POST, напротив следует использовать в случаях, когда нужно вносить изменение в ресурс
+    (выполнить авторизацию, отправить форму оформления заказа, форму обратной связи, форму онлайн заявки). Повторный
+    переход по конечной ссылке не вызовет повторную обработку запроса, так как не будет содержать переданных ранее
+    параметров. Метод POST имеет большую степень защиты данных, чем GET: параметры запроса не видны пользователю без
+    использования специального ПО, что дает методу преимущество при пересылке конфиденциальных.
+  </p>
+
+  <br>
+
+  <blockquote>Кроме GET и POST существуют методы PUT, PATCH и DELETE. Они отличаются от POST только названием и
+    разработчики выбирают тот или иной метод исходя из смысла действия.</blockquote>
+  <br>
+
+  <h2>Создание формы</h2>
+  <p>input types:</p>
+  <input type="text">
+  <br>
+  <input type="password" name="password" id="1">
+  <br>
+  <input type="checkbox" name="checkbox" id="2">
+  <br>
+  <input type="radio" name="text" id="3">1
+  <input type="radio" name="text2" id="4">2
+  <input type="radio" name="text3" id="5">3
+  <input type="file" name="file" id="6">
+  <input type="reset" value="1">
+
+  <br>
+  <p>buttons:</p>
+
+  <button>push</button>
+  <br>
+  <button type="submit">submit</button>
+  <br>
+
+
+  <p>select:</p>
+  <select name="123" id="123">
+    <option value="val1">nmbr1</option>
+    <option value="val2">nmbr2</option>
+    <option value="val3">nmbr3</option>
+  </select>
+  <br>
+  <p>email</p>
+  <input type="email" name="123" id="111">
+
+  h1.Hello
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <br>
+  <br>
+  <br>
+  <br>
+</body>
+
+</html>
